@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Hizmetlerimiz | Condia Media</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="" name="keywords">
+    <meta content="" name="description">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <script src="https://kit.fontawesome.com/607e4879ac.js" crossorigin="anonymous"></script>
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Edu+AU+VIC+WA+NT+Guides:wght@400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Start -->
+    <div id="spinner"
+        class="show bg-darkorbit position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner-grow text-primary" style="width: 3rem; height: 3rem;" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+    <!-- Spinner End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark p-0">
+                <a href="index.html" class="navbar-brand">
+                    <img  src="img/logo.png" alt="logo">
+                </a>
+                <button type="button" class="navbar-toggler ms-auto me-0" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <div class="navbar-nav ms-auto">
+                        <a href="index.html" class="nav-item nav-link">Ana Sayfa</a>
+                        <a href="hakkimizda.html" class="nav-item nav-link">Hakkımızda</a>
+                        <a href="hizmetlerimiz.html" class="nav-item nav-link active">Hizmetlerimiz</a>
+                        <a href="referanslarimiz.html" class="nav-item nav-link">Referanslarımız</a>
+                        <a href="sss.html" class="nav-item nav-link">S.S.S</a>
+                        <a href="iletisim.html" class="nav-item nav-link">İletişim</a>
+                        <!-- <a href="tr/index.html" class="lang nav-item nav-link"><i class="fa-solid fa-globe"></i> TR</a> -->
+                    </div>
+                </div>
+
+
+                <!-- <div class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Solutions</a>
+                    <div class="dropdown-menu bg-primary mt-2">
+                        <a href="packaging.html" class="dropdown-item">Packaging</a>
+                        <a href="erp-integration.html" class="dropdown-item">ERP Integration</a>
+                        <a href="bottling.html" class="dropdown-item">Bottling</a>
+                        <a href="fmcg.html" class="dropdown-item">FMCG</a>
+                        <a href="line-tracking.html" class="dropdown-item">Line Tracking</a>
+                        <a href="safety.html" class="dropdown-item">Safety</a>
+                    </div>
+                </div> -->
+
+                
+
+
+                <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+    var lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Sayfa içinde herhangi bir yere tıklandığında çalışacak kod
+    document.addEventListener("click", function (event) {
+        var clickover = event.target;
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show"); // Bootstrap 5'te "show" class'ı kullanılıyor
+        var isNavbarToggle = clickover.closest(".navbar-toggler");
+        var isDropdownToggle = clickover.closest(".dropdown-toggle"); // Dropdown menüsü açma butonunu kontrol et
+        var isDropdownMenu = clickover.closest(".dropdown-menu"); // Dropdown menüsünü kontrol et
+
+        // Navbar sadece dropdown ve navbar-toggler dışındaki alanlara tıklandığında kapanacak
+        if (isOpened && !isNavbarToggle && !isDropdownMenu && !isDropdownToggle) {
+            document.querySelector("button.navbar-toggler").click();
+            // Sayfa pozisyonunu sıfırla
+            lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+        }
+    });
+
+    // Dropdown'un kapanmaması için varsayılan kapanma davranışını engelle
+    var dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation(); // Tıklama olayı diğer elemanlara yayılmasın
+        });
+    });
+
+    // Sayfa kaydırıldığında navbar'ı kapat, ancak son pozisyondan itibaren 100px kaydırılınca
+    window.addEventListener('scroll', function () {
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show");
+
+        // Mevcut kaydırma pozisyonunu kontrol et
+        var currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        // Eğer navbar açıksa ve son kaydedilen pozisyondan 100px fazla kaydırılmışsa navbar'ı kapat
+        if (isOpened && Math.abs(currentScrollPosition - lastScrollPosition) > 200) {
+            document.querySelector("button.navbar-toggler").click();
+            // Yeni pozisyonu kaydet
+            lastScrollPosition = currentScrollPosition;
+        }
+    });
+});
+
+
+
+
+
+
+                </script>
+            <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+    var lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+    // Sayfa içinde herhangi bir yere tıklandığında çalışacak kod
+    document.addEventListener("click", function (event) {
+        var clickover = event.target;
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show"); // Bootstrap 5'te "show" class'ı kullanılıyor
+        var isNavbarToggle = clickover.closest(".navbar-toggler");
+        var isDropdownToggle = clickover.closest(".dropdown-toggle"); // Dropdown menüsü açma butonunu kontrol et
+        var isDropdownMenu = clickover.closest(".dropdown-menu"); // Dropdown menüsünü kontrol et
+
+        // Navbar sadece dropdown ve navbar-toggler dışındaki alanlara tıklandığında kapanacak
+        if (isOpened && !isNavbarToggle && !isDropdownMenu && !isDropdownToggle) {
+            document.querySelector("button.navbar-toggler").click();
+            // Sayfa pozisyonunu sıfırla
+            lastScrollPosition = window.scrollY || document.documentElement.scrollTop;
+        }
+    });
+
+    // Dropdown'un kapanmaması için varsayılan kapanma davranışını engelle
+    var dropdowns = document.querySelectorAll('.dropdown-menu');
+    dropdowns.forEach(function (dropdown) {
+        dropdown.addEventListener('click', function (event) {
+            event.stopPropagation(); // Tıklama olayı diğer elemanlara yayılmasın
+        });
+    });
+
+    // Sayfa kaydırıldığında navbar'ı kapat, ancak son pozisyondan itibaren 100px kaydırılınca
+    window.addEventListener('scroll', function () {
+        var navbarCollapse = document.querySelector("#navbarCollapse");
+        var isOpened = navbarCollapse.classList.contains("show");
+
+        // Mevcut kaydırma pozisyonunu kontrol et
+        var currentScrollPosition = window.scrollY || document.documentElement.scrollTop;
+
+        // Eğer navbar açıksa ve son kaydedilen pozisyondan 100px fazla kaydırılmışsa navbar'ı kapat
+        if (isOpened && Math.abs(currentScrollPosition - lastScrollPosition) > 200) {
+            document.querySelector("button.navbar-toggler").click();
+            // Yeni pozisyonu kaydet
+            lastScrollPosition = currentScrollPosition;
+        }
+    });
+});
+
+
+
+
+
+
+                </script>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <div class="container-fluid bg-darkorbit pt-5">
+        <div class="container pt-5" style="margin-top: 70px;">
+            <div class="row g-5">
+                <div class="col-lg-6 align-self-center mb-md-5 pb-md-5 wow fadeIn" data-wow-delay="0.3s"
+                    style="visibility: visible; animation-delay: 0.3s; animation-name: fadeIn;">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3 pill-skill">Hizmetlerimiz</div>
+                    <h1 class="text-white mb-4">
+                        Hizmetlerimiz: Kalite ve Yenilikle Fark Yaratın
+                    </h1>
+                    <p class="text-light mb-4">
+                        Yüksek standartlarda sunduğumuz hizmetlerimizle, işletmenizin ihtiyaçlarını karşılamak ve hedeflerinize ulaşmak için
+                        buradayız. Uzman ekibimiz, sektördeki en son yenilikleri takip ederek, özelleştirilmiş çözümler sunarak
+                        verimliliğinizi artırmayı ve sürdürülebilir başarı sağlamayı hedeflemektedir. Kalite odaklı yaklaşımımızla, her bir
+                        hizmetimiz, markanızı güçlendirecek ve rakiplerinizin önüne geçmenizi sağlayacak şekilde tasarlanmıştır.
+                    </p>
+
+    
+    
+    
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Service Start -->
+    <div class="container-fluid bg-darkorbit  py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-start">
+                <div class="col-lg-5 wow fadeIn sticky-effectox" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill pill-skill text-primary px-3 mb-3">Neler Yapıyoruz?</div>
+                    <h1 class="mb-4">
+                        Hızlı Çözümler
+                    </h1>
+                    <p class="mb-4">
+                        Size en iyi hizmeti sunmak için müşterilerimizle anında iletişim kuruyor ve ihtiyaçlarınızı hızlı bir şekilde çözüyoruz.
+                    </p>
+                    <a class="btn btn-primary rounded-pill px-4" href="hakkimizda.html">Tümünü Gör</a>
+                </div>
+            <div class="col-lg-7 row-mobile">
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="row g-4">
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                <a href="#"
+                                    class="service-item bottling d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/yazilim-projeleri.jpg" alt="">
+                                    <h5 >Yazılım Projeleri</h5>
+                                   
+                                </a>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="#"
+                                    class="service-item erp d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/mobil-uygulama.jpg" alt="">
+                                    <h5 class="mb-3">Mobil Uygulama Tasarımı</h5>
+                                </a>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="#" class="service-item pack d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/web-tasarimi.jpg" alt="">
+                                    <h5 class="mb-3">Web Tasarımı</h5>
+                                </a>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="#"
+                                    class="service-item pack d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/kurumsal-kimlik.jpg" alt="">
+                                    <h5 class="mb-3">Kurumsal Kimlik Tasarımı</h5>
+                                </a>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                <a href="#" class="service-item pack d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/safety.jpg" alt="">
+                                    <h5 class="mb-3">Reklam ve Video Çekimi</h5>
+                                </a>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row g-4">
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                <a href="#"
+                                    class="service-item fmcg d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/e-ticaret.jpg" alt="">
+                                    <h5 class="mb-3">E-Ticaret Sitesi Kurulumu</h5>
+                                </a>
+                            </div>
+                            
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="#"
+                                    class="service-item linetrack d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/web-yazilim.jpg" alt="">
+                                    <h5 class="mb-3">Web Yazılım</h5>
+                                </a>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="#"
+                                    class="service-item safety d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/sosyal-medya.jpg" alt="">
+                                    <h5 class="mb-3">Sosyal Medya Yönetimi</h5>
+                                </a>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="#"
+                                    class="service-item safety d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/marketing.jpg" alt="">
+                                    <h5 class="mb-3">Marketing ve SEO</h5>
+                                </a>
+                            </div>
+                            <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                <a href="#"
+                                    class="service-item safety d-flex flex-column justify-content-center text-center rounded">
+                                    <img class="cardvideo" src="img/dijital-pazarlama.jpg" alt="">
+                                    <h5 class="mb-3">Dijital Pazarlama</h5>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+ 
+
+
+
+
+    <!-- Team Start -->
+    <!-- <div class="container-fluid bg-light py-5">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-lg-5 wow fadeIn" data-wow-delay="0.1s">
+                    <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">Our Team</div>
+                    <h1 class="mb-4">Meet Our Experienced Team Members</h1>
+                    <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum et tempor sit. Aliqu diam
+                        amet diam et eos labore. Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus
+                        clita duo justo et tempor eirmod magna dolore erat amet</p>
+                    <a class="btn btn-primary rounded-pill px-4" href="">Read More</a>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.1s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-1.jpg" alt="">
+                                        <h5 class="mb-0">Boris Johnson</h5>
+                                        <small>Founder & CEO</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.5s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-2.jpg" alt="">
+                                        <h5 class="mb-0">Adam Crew</h5>
+                                        <small>Executive Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 pt-md-4">
+                            <div class="row g-4">
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.3s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-3.jpg" alt="">
+                                        <h5 class="mb-0">Kate Winslet</h5>
+                                        <small>Co Founder</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 wow fadeIn" data-wow-delay="0.7s">
+                                    <div class="team-item bg-white text-center rounded p-4 pt-0">
+                                        <img class="img-fluid rounded-circle p-4" src="img/team-4.jpg" alt="">
+                                        <h5 class="mb-0">Cody Gardner</h5>
+                                        <small>Project Manager</small>
+                                        <div class="d-flex justify-content-center mt-3">
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-facebook-f"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-twitter"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-instagram"></i></a>
+                                            <a class="btn btn btn-primary m-1" href=""><i
+                                                    class="fab fa-linkedin-in"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- Team End -->
+
+
+
+
+
+    <!-- Bülten Başlangıcı -->
+    <div class="container-fluid bg-darkorbit newsletter">
+        <div class="container">
+            <div class="row g-5 align-items-center">
+                <div class="display-none col-md-5 ps-lg-0 pt-5 pt-md-0 text-start wow fadeIn" data-wow-delay="0.3s">
+                    <img class="img-fluid" src="img/newsletter.png" alt="">
+                </div>
+                <div class="col-md-7 newsletter-text wow fadeIn" data-wow-delay="0.5s">
+                    <div class="btn btn-sm border rounded-pill text-white px-3 mb-3">Haber Bülteni</div>
+                    <h1 class="text-white mb-4">Kampanyaları Kaçırmayın</h1>
+                    <div class="position-relative w-100 mt-3 mb-2">
+                        <input class="form-control border-0 rounded-pill w-100 ps-4 pe-5" type="text"
+                            placeholder="E-posta Adresinizi Girin" style="height: 48px;">
+                        <button type="button" class="btn shadow-none position-absolute top-0 end-0 mt-1 me-2"><i
+                                class="fa fa-paper-plane text-primary fs-4"></i></button>
+                    </div>
+                    <small class="text-white-50">E-posta adresinizi paylaşarak gizlilik politikamızı kabul etmiş
+                        olursunuz.</small>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bülten Sonu -->
+
+
+
+    <!-- Footer Başlangıcı -->
+    <div class="container-fluid bg-primarybit text-white-50 footer pt-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
+                    <a href="index.html" class="d-inline-block mb-3">
+                        <img style="width: 200px;" src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
+                    <h5 class="text-white mb-4">Popüler Bağlantılar</h5>
+                    <a class="btn btn-link" href="about.html">Hakkımızda</a>
+                    <a class="btn btn-link" href="contact.html">İletişim</a>
+                    <a class="btn btn-link" href="privacy.html">Gizlilik Politikası</a>
+                    <a class="btn btn-link" href="terms.html">Şartlar ve Koşullar</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
+                    <h5 class="text-white mb-4">Servislerimiz</h5>
+                    <a class="btn btn-link" href="software-projects.html">Yazılım Projeleri</a>
+                    <a class="btn btn-link" href="mobile-app-design.html">Mobil Uygulama Tasarımı</a>
+                    <a class="btn btn-link" href="web-design.html">Web Tasarımı</a>
+                    <a class="btn btn-link" href="corporate-identity-design.html">Kurumsal Kimlik Tasarımı</a>
+                    <a class="btn btn-link" href="advertising-video.html">Reklam ve Video Çekimi</a>
+                    <a class="btn btn-link" href="ecommerce-setup.html">E-Ticaret Sitesi Kurulumu</a>
+                    <a class="btn btn-link" href="web-development.html">Web Yazılım</a>
+                    <a class="btn btn-link" href="social-media-management.html">Sosyal Medya Yönetimi</a>
+                    <a class="btn btn-link" href="marketing-seo.html">Marketing ve SEO</a>
+                    <a class="btn btn-link" href="digital-marketing.html">Dijital Pazarlama</a>
+                </div>
+                <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.7s">
+                    <h5 class="text-white mb-4">İletişime Geçin</h5>
+                    <p><i style="width: 10px;" class="fa fa-map-marker-alt me-3"></i>İstanbul, TÜRKİYE</p>
+                    <p><a style="color:#ffffff80; text-decoration:none" href="mailto:hello@condiamedia.com"><i
+                                style="width: 10px;" class="fa fa-envelope me-3"></i>iletisim@condiamedia.com</a></p>
+                    <div class="d-flex pt-2">
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-x-twitter"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
+                        <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container wow fadeIn" data-wow-delay="0.1s">
+            <div class="copyright">
+                <div class="row">
+                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                        &copy; <a class="border-bottom" href="index.html">Condia Media</a>, Tüm Hakları Saklıdır.
+                    </div>
+                    <div class="col-md-6 text-center text-md-end">
+                        <div class="footer-menu">
+                            <a href="index.html">Ana Sayfa</a>
+                            <a href="#">Çerezler</a>
+                            <a href="iletisim.html">Yardım</a>
+                            <a href="sss.html">S.S.S</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Sonu -->
+
+
+<script>
+    
+    const cardvideo = document.querySelectorAll(".cardvideo");
+        const cardv = document.querySelectorAll(".cardv");
+
+        // Ekran genişliğini kontrol et
+        const isMobile = window.innerWidth <= 768; // Mobil cihazlar için (768px ve daha küçük ekranlar)
+
+        if (!isMobile) {
+            for (let i = 0; i < cardvideo.length; i++) {
+                cardvideo[i].addEventListener("mouseover", () => {
+                    cardv[i].play(); // Mouse over olduğunda video oynatılır
+                });
+
+                cardvideo[i].addEventListener("mouseleave", () => {
+                    cardv[i].pause(); // Mouse'tan çıkıldığında video durdurulur
+                    cardv[i].currentTime = 0; // Video başlangıç noktasına döner
+                });
+            }
+        } else {
+            // Mobil cihazlarda sadece poster gösterilsin, video oynatılmasın
+            cardv.forEach(video => {
+                video.setAttribute('poster', video.getAttribute('poster')); // Sadece poster görünsün
+                video.style.pointerEvents = 'none'; // Tıklanabilirliği kaldır (isteğe bağlı)
+            });
+        }
+
+        // Tüm videolarda kontrol butonlarını gizle
+        cardv.forEach(video => {
+            video.removeAttribute('controls'); // Kontrol butonlarını kaldır
+        });
+
+
+</script>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-dark btn-lg back-to-top pt-2"><i class="bi bi-arrow-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/counterup/counterup.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
